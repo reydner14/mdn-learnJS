@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Number Guessing Game</title>
+  </head>
+  <body>
+    <div class="test">
+      <main class="content">
+        <h1 class="title">adivinhe o número</h1>
+        <p class="game-description">
+          Um número entre 1 e 100 foi selecionado. Tente adivinhar qual é o
+          número em 10 chutes ou menos. O jogo dirá se o chute foi alto ou baixo
+          demais.
+          <!-- We have selected a random number between 1 and 100. See if you can
+          guess it in 10 turns or fewer. We'll tell you if your guess was too
+          high or too low. -->
+        </p>
+        <div class="game">
+          <label for="guess-number">Entre um chute:</label>
+          <input
+            type="number"
+            min="1"
+            max="100"
+            name="guess-number"
+            id="guess-number"
+          />
+          <input type="submit" value="Chutar" class="btn" />
+        </div>
+        <div class="result">
+          <p class="guesses"></p>
+          <p class="lastResult"></p>
+          <p class="lowOrHi"></p>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

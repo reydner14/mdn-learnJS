@@ -1,0 +1,61 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.test {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 500px;
+  height: auto;
+  background-color: greenyellow;
+  padding: 25px;
+}
+.title {
+  text-transform: capitalize;
+  text-align: center;
+}
+.game {
+  text-align: center;
+}
+#guess-number {
+  width: 200px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.btn {
+  background-color: honeydew;
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: black;
+  color: honeydew;
+}
+/* classes for javascript */
+.btn[disabled] {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  cursor: default;
+}
+.reset {
+  display: block;
+  margin: 0 auto;
+}
